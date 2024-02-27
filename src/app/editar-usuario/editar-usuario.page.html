@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Editar usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  
+  <ion-button id="present-alert">correo</ion-button>
+  <ion-alert
+    trigger="present-alert"
+    header="Cambiar correo"
+    [buttons]="alertButtons"
+    [inputs]="alertInputs"
+  ></ion-alert>
+
+  <ion-button id="present-alert2">contraseña</ion-button>
+  <ion-alert
+    trigger="present-alert2"
+    header="Cambiar contraseña"
+    [buttons]="alertButtons2"
+    [inputs]="alertInputs2"
+  ></ion-alert>
+  
+</ion-content>
