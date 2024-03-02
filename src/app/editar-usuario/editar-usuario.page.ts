@@ -10,44 +10,48 @@ export class EditarUsuarioPage implements OnInit {
   public alertButtons = [
     {
       text: 'Regresar',
-      cssClass: 'alert-button-cancel',
+      cssClass: 'botton',
     },
     {
-      text: 'Cambiar',
-      cssClass: 'alert-button-confirm',
+      text: 'Guardar cambios',
+      cssClass: 'botton',
     },
   ];
 
   public alertButtons2 = [
     {
       text: 'Regresar',
-      cssClass: 'alert-button-cancel',
+      cssClass: 'botton',
     },
     {
-      text: 'Cambiar',
-      cssClass: 'alert-button-confirm',
+      text: 'Guardar cambios',
+      cssClass: 'botton',
     },
   ];
 
   public alertInputs = [
     {
-      placeholder: 'Correo',
+      placeholder: 'Nuevo correo',
       type: 'email',
+      cssClass: 'titulo',
     },
     {
-      placeholder: 'coloca de nuevo el correo',
+      placeholder: 'Repita el correo',
       type: 'email',
+      cssClass: 'Correo',
     },
   ];
 
   public alertInputs2 = [
     {
-      placeholder: 'Coloca la contraseña',
-      type: 'text'
+      placeholder: 'Nueva contraseña',
+      type: 'text',
+      cssClass: 'contra',
     },
     {
-      placeholder: 'Vuelve a colocar la contraseña',
+      placeholder: 'Repita la contraseña',
       type: 'text',
+      cssClass: 'contra',
     },
   ];
 

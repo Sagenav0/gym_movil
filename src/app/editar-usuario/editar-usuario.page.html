@@ -6,8 +6,13 @@
     <ion-title>Editar usuario</ion-title>
   </ion-toolbar>
 </ion-header>
+
 <ion-content class="ion-padding">
+
+  <ion-button [routerLink]="['/cambiar-correo']">correo</ion-button>
+  <ion-button [routerLink]="['/cambiar-contraena']">contraseña</ion-button>
   
+  <!-- primer alert -->
   <ion-button id="present-alert">correo</ion-button>
   <ion-alert
     trigger="present-alert"
@@ -16,12 +21,14 @@
     [inputs]="alertInputs"
   ></ion-alert>
 
+  <!-- segundo alert -->
+
   <ion-button id="present-alert2">contraseña</ion-button>
   <ion-alert
     trigger="present-alert2"
     header="Cambiar contraseña"
     [buttons]="alertButtons2"
     [inputs]="alertInputs2"
-  ></ion-alert>
-  
+    ></ion-alert>
+
 </ion-content>

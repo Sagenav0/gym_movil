@@ -25,9 +25,79 @@
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
 
+
 .titulo{
     color: var(--color-titulo);
 }
 .titulogym{
     color:var(--color-titulogym);
 }
+
+.alert-input.sc-ion-alert-md{
+    background-color: #d6d6d6;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+    .alert-input.sc-ion-alert-md::placeholder {
+        text-align: center;
+        justify-content: center;
+        color: black;
+    }
+
+
+.alert-button-group.sc-ion-alert-md {
+    justify-content: space-evenly;
+}
+
+.alert-head.sc-ion-alert-md {
+    text-align: center;
+    
+}
+
+.alert-button.sc-ion-alert-md {
+    color: black;
+    background-color: #ceb41f;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 5px ;
+}
+
+.inputs {
+    outline: none;
+    background-color: #d6d6d6;
+    border-radius: 10px;
+    border-bottom: 1px solid #d9d9d9;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    border: 0;
+    text-align: center;
+}
+
+
+/* .alert-input.sc-ion-alert-md{
+    border-bottom: 1px solid #d6d6d6;
+    --background-color: #d6d6d6;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+    .alert-input.sc-ion-alert-md::placeholder {
+        color: #d6d6d6; 
+        text-align: center;
+        justify-content: center;
+    }
+
+
+.alert-button-group.sc-ion-alert-md {
+    justify-content: space-between;
+}
+
+.alert-head.sc-ion-alert-md {
+    text-align: center;
+    
+} */

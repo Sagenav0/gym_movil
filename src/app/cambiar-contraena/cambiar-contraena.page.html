@@ -1,13 +1,33 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>cambiar-contraena</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">cambiar-contraena</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" id="contenedor-padre" class="ion-padding">
+    <h2 size="large" id="titulo">cambiar contraseña</h2>
+    
+      
+
+        <div id="contenedor-hijo">
+
+          <div class="input">
+            <label class="lab">Nueva contraseña:</label>
+            <input type="text" class="inputs" name="contra1" >
+          </div>
+
+          <div class="input">
+            <label class="lab">Confirma tu contraseña:</label>
+            <input type="text" class="inputs" name="contra2" >
+          </div>
+
+        </div>
+      
+      <div id="botones">
+      <ion-button id="boton" [routerLink]="['/editar-usuario']">Guardar cambios</ion-button>
+      </div>
+
+
 </ion-content>
