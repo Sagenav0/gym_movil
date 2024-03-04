@@ -58,7 +58,7 @@ ion-menu.md ion-item.selected ion-icon {
 }
 
 ion-menu.md ion-item ion-icon {
-  color: #616e7e;
+  color: #d6d6d6;
 }
 
 ion-menu.md ion-item ion-label {
@@ -116,4 +116,16 @@ ion-note {
 
 ion-item.selected {
   --color: var(--ion-color-primary);
+}
+
+div.cerrar{
+  position: relative;
+  display: flex;
+}
+.button-solid{
+  
+  color: var(--ion-color-primary-contrast);
+  margin: 0;
+  padding: 0;
+  border: none; 
 }
