@@ -24,3 +24,36 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+
+
+// .toolbar-container{
+//     width: 100vw;
+//     height: 100%;
+//     display: grid;
+//     grid-template-columns: auto 1fr auto; // Columnas automáticas para el botón del menú y el botón con el icono, y una columna que ocupará el espacio restante
+//     align-items: center; // Centrar verticalmente los elementos
+//   }
+  
+
+ion-menu-button {
+    color: var(--ion-color-primary-tint);
+  }
+.titulos{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: var(--ion-color-primary-tint);
+}
+
+.nombreinterfas{
+    text-align: center ;
+    font-size: 24px;
+    color: var(--ion-color-primary);
+   
+}
+ion-icon{
+    width: 40px;
+    height: 40px;
+    color: var(--ion-color-primary-contrast);
+}
