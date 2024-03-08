@@ -15,7 +15,7 @@ export class ConexionService {
   }
 
 
-  url = "http://localhost:8080" //Dirección de backend
+  url = "http://127.0.0.1:80" //Dirección de backend
   constructor(private http:HttpClient) { }
 
   consultaDatos():Observable<any>{
@@ -23,11 +23,21 @@ export class ConexionService {
     .get(this.url+'/consultaDatos')
   }
 
-  cambiarContra(con:any):Observable<any>{
+  cambiarContra(dat:any):Observable<any>{
     return this.http
-    .post(this.url+"/cambiarContra", JSON.stringify(con))
+    .post(this.url+"/cambiarContra", JSON.stringify(dat))
     .pipe(tap(()=>{
         this.refresh$.next()
     }))
   }
+
+  cambiarCorreo(dat:any):Observable<any>{
+    return this.http
+    .post(this.url+"/cambiarCorreo", JSON.stringify(dat))
+    .pipe(tap(()=>{
+        this.refresh$.next()
+    }))
+  }
+
+
 }

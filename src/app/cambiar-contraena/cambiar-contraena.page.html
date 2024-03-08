@@ -9,27 +9,21 @@
 <ion-content [fullscreen]="true" id="contenedor-padre" class="ion-padding">
     <h2 size="large" id="titulo">cambiar contraseña</h2>
     
-    <form [formGroup]="form" >
+    <ion-list>
 
-      <ion-input formControlName="cedula" value="1193592038"></ion-input>
+      {{cedula}}
 
-      <ion-item>
+    <ion-item>
+      <ion-input label="Nueva contraseña" label-placement="floating" type="text"  fill="solid" [(ngModel)]="contra1"></ion-input>
+    </ion-item>
 
-        <ion-label position="floating">Nueva contraseña:</ion-label>
-        <ion-input type="text" formControlName="contra1"></ion-input>
+    <ion-item>
+      <ion-input label="Confirma tu nueva contraseña" label-placement="floating" fill="solid"  type="text" [(ngModel)]="contra2"></ion-input>
+    </ion-item>
 
-      </ion-item>
+  </ion-list>
 
-      <ion-item>
-
-        <ion-label position="floating">Confirma tu contraseña:</ion-label>
-        <ion-input type="text" formControlName="contra2"></ion-input>
-
-      </ion-item>
-      
-
-      <ion-button type="submit" class="ion-padding" expand="full" [disabled]="form.invalid">Actualizar</ion-button>
-    </form>
+  <ion-button type="submit" class="ion-padding" expand="full" (click)="verificarContrasena()" >Actualizar</ion-button>
 <!-- 
   <form [formGroup]="form" >
 
